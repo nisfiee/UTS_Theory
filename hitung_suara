@@ -1,0 +1,92 @@
+#include<iostream>
+using namespace std;
+
+void main()
+{
+	int n, i = 1, af=0, bd=0, sr=0;
+
+	cout<< "\t Hitung Suara Terbanyak dan Mengurutkannnya" <<endl;
+	cout<< "\t--------------------------------------------" <<endl;
+	cout<< " Kandidat Ketua-Wakil HIMTI Periode 2013-2015" <<endl;
+	cout<< "    1. AF (Arief-Firman) " <<endl;
+	cout<< "    2. BD (Bambang Devina) " <<endl;
+	cout<< "    3. SR (Sri-Rahman) " <<endl;
+
+	cout<< " Jumlah anggota HIMTI yang akan memilih = ";
+	cin>> n;
+	cout<<endl;
+	cout<< " Silahkan masukkan pilihan Anda. " <<endl;
+	cout<< "--------------------------------- " <<endl;
+	
+
+	int pilih;
+
+	do
+	{
+	cout<< " Pilih = ";
+	cin>> pilih;
+	cout<< endl;
+	i++;
+	}while(i<=n);
+
+	if (pilih==1)
+		{
+			af=af+1;
+		}
+
+	else if (pilih==2)
+		{
+			bd=bd+1;
+		}
+
+	else if (pilih==3)
+		{
+			sr=sr+1;
+		}
+
+	cout<< " Hasil Voting : " << endl;
+	cout<< "----------------" << endl;
+	
+	
+		if((af> sr) && (af > bd))
+	{
+		cout<<"Pemenang I adalah AF"<<endl<<endl;
+	}
+	else if((bd > sr) && (bd > af))
+	{
+		cout<<"Pemenang II adalah BD"<<endl<<endl;
+	}
+	else if((sr > af) && (sr > bd))
+	{
+		cout<<"Pemenang III SR"<<endl<<endl;
+	}
+
+		if((bd> sr) && (bd > af))
+	{
+		cout<<"Pemenang I adalah BD"<<endl<<endl;
+	}
+	else if((af > sr) && (af > bd))
+	{
+		cout<<"Pemenang II adalah AF"<<endl<<endl;
+	}
+	else if((sr > af) && (sr > bd))
+	{
+		cout<<"Pemenang III SR"<<endl<<endl;
+	}
+
+	if((sr> bd) && (sr > af))
+	{
+		cout<<"Pemenang I adalah SR"<<endl<<endl;
+	}
+	else if((bd > sr) && (bd > af))
+	{
+		cout<<"Pemenang II adalah BD"<<endl<<endl;
+	}
+	else if((af > bd) && (af > sr))
+	{
+		cout<<"Pemenang III BD"<<endl<<endl;
+	}
+	
+		
+
+}
