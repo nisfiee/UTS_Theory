@@ -1,0 +1,26 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+void main()
+{
+
+    int a,b,c;
+    
+    cout<< " \t Menukar Dua Bilangan" <<endl;
+	cout<< " \t----------------------" <<endl;
+	cout<< " Nilai Awal A  =  ";
+    cin>>a;
+    cout<< " Nilai Awal B  =  ";
+    cin>>b;
+
+    c=a;
+    a=b;
+    b=c;
+
+    cout<< "\n Setelah ditukar . . ." <<endl <<endl;
+	getch();
+
+    cout<< " Nilai Akhir A  =  " <<a <<endl;
+    cout<< " Nilai Akhir B  =  "<<b <<endl <<endl <<endl;
+}
