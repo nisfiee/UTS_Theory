@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+
+void main()
+{
+	cout<< " Menyusun Segitiga Bintang (Star)" <<endl;
+	cout<< " ----------------------------------" <<endl;
+	for (int x=0; x<=5; x++)  
+	{  
+		for (int y=0; y<x; y++)  
+		cout<<" *";  
+		cout<<"\n";  
+	} 
+
+}
